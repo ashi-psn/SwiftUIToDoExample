@@ -6,10 +6,17 @@
 //
 
 import SwiftUI
+import Repository
+import Entity
 
 struct ToDoListView: View {
+    
+    var todos: [ToDo] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        List(todos, id: \.id) { todo in
+            ToDoListItemView(todo: todo)
+        }
     }
 }
 
