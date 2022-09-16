@@ -14,6 +14,8 @@ public class ToDoRepository {
     
     let userdefault: UserDefaults
     
+    private let todoValueKey = "todo_value_key"
+    
     private init(){
         self.userdefault = UserDefaults.standard
     }

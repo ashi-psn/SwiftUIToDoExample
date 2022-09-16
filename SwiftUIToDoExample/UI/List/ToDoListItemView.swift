@@ -15,10 +15,12 @@ struct ToDoListItemView: View {
     
     var body: some View {
         Section {
-            Text(todo.text)
+            NavigationLink(destination: ToDoCreateView()) {
+                Text(todo.text)
+            }
         } header: {
             Text(todo.id.uuidString)
-        }
+        }.background(Color.white)
     }
 }
 

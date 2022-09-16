@@ -9,14 +9,87 @@ import SwiftUI
 import Repository
 import Entity
 
+
+/// ToDoListView
 struct ToDoListView: View {
     
-    var todos: [ToDo] = []
+    /// Todo list items
+    @State private var todos: [ToDo] = []
+    
+    
+    /// Show ToDoCreateView flug.
+    @State private var showCreateView: Bool = false
+    
+    /// Show ToDoCreateView flug.
+    @State private var showEditView: Bool = false
+    
+    
+    /// ToDoRepository singleton object
+    let repository = ToDoRepository.shared
+    
     
     var body: some View {
-        List(todos, id: \.id) { todo in
-            ToDoListItemView(todo: todo)
+        NavigationView {
+            ZStack {
+                // showCreateViewがtrueになったら作成画面へ遷移させる
+                NavigationLink(
+                    destination: ToDoCreateView().onDisappear {
+                        getData()
+                    },
+                    isActive: $showCreateView
+                ) {
+                    EmptyView()
+                }
+                .navigationTitle("ToDo一覧")
+                .navigationBarTitleDisplayMode(.inline)
+                
+                // List
+                List(todos, id: \.id) { todo in
+                    NavigationLink(
+                        destination: ToDoEditView(todo: todo)
+                            .onDisappear {
+                                getData()
+                            },isActive: $showEditView) {
+                                ToDoListItemView(todo: todo)
+                            }
+                    
+                }.background(Color.white)
+                // floadting action button
+                VStack {
+                    Spacer()
+                    HStack {
+                        Spacer()
+                        Button(action: {
+                            showCreateView = true
+                        }, label: {
+                            Image(systemName: "pencil")
+                                .foregroundColor(.white)
+                                .font(.system(size: 24))
+                        })
+                        .frame(width: 60, height: 60)
+                        .background(Color.orange)
+                        .cornerRadius(30.0)
+                        .padding(
+                            EdgeInsets(
+                                top: 0,
+                                leading: 0,
+                                bottom: 16,
+                                trailing: 16
+                            )
+                        )
+                    }
+                }
+            }
         }
+        .onAppear {
+            getData()
+        }
+    }
+    
+    
+    /// Get todo data
+    func getData() {
+        self.todos = repository.getAll()
     }
 }
 

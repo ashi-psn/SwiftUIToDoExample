@@ -6,10 +6,35 @@
 //
 
 import SwiftUI
+import Repository
 
 struct ToDoCreateView: View {
+    
+    @Environment(\.dismiss) var dismiss
+    
+    @State private var text: String = ""
+    
+    private let repository = ToDoRepository.shared
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            VStack {
+                TextField("ToDo", text: $text)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
+                    .padding(16.0)
+                Button {
+                    save(text: text)
+                } label: {
+                    Text("保存")
+                }
+                Spacer()
+            }
+            .navigationTitle("作成")
+            .navigationBarTitleDisplayMode(.inline)
+    }
+    
+    func save(text: String) {
+        repository.save(text: text)
+        dismiss()
     }
 }
 

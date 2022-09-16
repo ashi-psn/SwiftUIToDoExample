@@ -38,6 +38,7 @@
 		774C977328D2A86400C530CC /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 774C976328D2A86400C530CC /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		774C977628D2A86400C530CC /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C976128D2A86400C530CC /* Repository.framework */; };
 		774C977728D2A86400C530CC /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 774C976128D2A86400C530CC /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		774C978328D3F5C700C530CC /* ToDoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C978228D3F5C700C530CC /* ToDoEditView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,7 @@
 		774C976428D2A86400C530CC /* Repository.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Repository.docc; sourceTree = "<group>"; };
 		774C976A28D2A86400C530CC /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		774C977128D2A86400C530CC /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
+		774C978228D3F5C700C530CC /* ToDoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEditView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +332,7 @@
 		774C975B28D2A83E00C530CC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				774C978128D3F5B700C530CC /* Edit */,
 				763CD67928D2AD8200A011CB /* Create */,
 				763CD67828D2AD5800A011CB /* List */,
 			);
@@ -371,6 +374,14 @@
 				763CD6A828D2B28900A011CB /* ToDoRepositoryErrorTests.swift */,
 			);
 			path = ToDo;
+			sourceTree = "<group>";
+		};
+		774C978128D3F5B700C530CC /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				774C978228D3F5C700C530CC /* ToDoEditView.swift */,
+			);
+			path = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -661,6 +672,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				774C975528D2A81800C530CC /* ToDoCreateView.swift in Sources */,
+				774C978328D3F5C700C530CC /* ToDoEditView.swift in Sources */,
 				76CA855B28D3151F0007FC03 /* ToDoListItemView.swift in Sources */,
 				774C975328D2A7DD00C530CC /* ToDoListView.swift in Sources */,
 				774C972928D2A78D00C530CC /* SwiftUIToDoExampleApp.swift in Sources */,

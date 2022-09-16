@@ -9,9 +9,28 @@ import SwiftUI
 
 @main
 struct SwiftUIToDoExampleApp: App {
+    
+    init() {
+        setNavigationApperance()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ToDoListView()
         }
+    }
+    
+    func setNavigationApperance() {
+        let appearance = UINavigationBarAppearance()
+        appearance.configureWithOpaqueBackground()
+        appearance.backgroundColor = UIColor.white
+        appearance.titleTextAttributes = [
+            .foregroundColor: UIColor.black
+        ]
+        appearance.largeTitleTextAttributes = [
+            .foregroundColor: UIColor.black
+        ]
+        UINavigationBar.appearance().standardAppearance = appearance
+        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
 }
