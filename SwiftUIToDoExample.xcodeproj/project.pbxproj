@@ -11,13 +11,11 @@
 		763CD67728D2AC4400A011CB /* ToDoRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CD67628D2AC4400A011CB /* ToDoRepositoryTests.swift */; };
 		763CD68528D2AE4500A011CB /* Entity.docc in Sources */ = {isa = PBXBuildFile; fileRef = 763CD68428D2AE4500A011CB /* Entity.docc */; };
 		763CD68B28D2AE4500A011CB /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763CD68128D2AE4500A011CB /* Entity.framework */; };
-		763CD69228D2AE4600A011CB /* EntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CD69128D2AE4600A011CB /* EntityTests.swift */; };
 		763CD69328D2AE4600A011CB /* Entity.h in Headers */ = {isa = PBXBuildFile; fileRef = 763CD68328D2AE4500A011CB /* Entity.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		763CD69628D2AE4600A011CB /* Entity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 763CD68128D2AE4500A011CB /* Entity.framework */; };
 		763CD69728D2AE4600A011CB /* Entity.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 763CD68128D2AE4500A011CB /* Entity.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		763CD6A028D2AE5A00A011CB /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CD69F28D2AE5A00A011CB /* ToDo.swift */; };
 		763CD6A328D2AEB900A011CB /* ToDoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CD6A228D2AEB900A011CB /* ToDoTests.swift */; };
-		763CD6A728D2B1EF00A011CB /* ToDoRepositoryError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CD6A628D2B1EF00A011CB /* ToDoRepositoryError.swift */; };
 		763CD6A928D2B28900A011CB /* ToDoRepositoryErrorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763CD6A828D2B28900A011CB /* ToDoRepositoryErrorTests.swift */; };
 		76CA855B28D3151F0007FC03 /* ToDoListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA855A28D3151F0007FC03 /* ToDoListItemView.swift */; };
 		774C972928D2A78D00C530CC /* SwiftUIToDoExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C972828D2A78D00C530CC /* SwiftUIToDoExampleApp.swift */; };
@@ -34,11 +32,16 @@
 		774C975928D2A82D00C530CC /* ToDoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C975228D2A7DD00C530CC /* ToDoListView.swift */; };
 		774C976528D2A86400C530CC /* Repository.docc in Sources */ = {isa = PBXBuildFile; fileRef = 774C976428D2A86400C530CC /* Repository.docc */; };
 		774C976B28D2A86400C530CC /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C976128D2A86400C530CC /* Repository.framework */; };
-		774C977228D2A86400C530CC /* RepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C977128D2A86400C530CC /* RepositoryTests.swift */; };
 		774C977328D2A86400C530CC /* Repository.h in Headers */ = {isa = PBXBuildFile; fileRef = 774C976328D2A86400C530CC /* Repository.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		774C977628D2A86400C530CC /* Repository.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 774C976128D2A86400C530CC /* Repository.framework */; };
 		774C977728D2A86400C530CC /* Repository.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 774C976128D2A86400C530CC /* Repository.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		774C978328D3F5C700C530CC /* ToDoEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C978228D3F5C700C530CC /* ToDoEditView.swift */; };
+		774C978828D480E700C530CC /* ToDoUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C978728D480E700C530CC /* ToDoUserDefaults.swift */; };
+		774C978A28D4818D00C530CC /* AppUserDefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C978928D4818D00C530CC /* AppUserDefaultsKeys.swift */; };
+		774C978E28D54BC000C530CC /* ToDoInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C978D28D54BC000C530CC /* ToDoInputView.swift */; };
+		774C979428D563AB00C530CC /* AppUserDefaultsKeysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774C979328D563AB00C530CC /* AppUserDefaultsKeysTests.swift */; };
+		774C97D928D833FC00C530CC /* EasyUserDefaults in Frameworks */ = {isa = PBXBuildFile; productRef = 774C97D828D833FC00C530CC /* EasyUserDefaults */; };
+		77BEFC8E28D84ADF0006909B /* ToDoListViewUIests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77BEFC8D28D84ADF0006909B /* ToDoListViewUIests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,13 +53,6 @@
 			remoteInfo = Entity;
 		};
 		763CD69428D2AE4600A011CB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 774C971D28D2A78D00C530CC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 763CD68028D2AE4500A011CB;
-			remoteInfo = Entity;
-		};
-		763CD6A428D2B02600A011CB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 774C971D28D2A78D00C530CC /* Project object */;
 			proxyType = 1;
@@ -91,6 +87,13 @@
 			remoteGlobalIDString = 774C976028D2A86400C530CC;
 			remoteInfo = Repository;
 		};
+		774C97D528D8132700C530CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 774C971D28D2A78D00C530CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 763CD68028D2AE4500A011CB;
+			remoteInfo = Entity;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -115,10 +118,8 @@
 		763CD68328D2AE4500A011CB /* Entity.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
 		763CD68428D2AE4500A011CB /* Entity.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Entity.docc; sourceTree = "<group>"; };
 		763CD68A28D2AE4500A011CB /* EntityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EntityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		763CD69128D2AE4600A011CB /* EntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityTests.swift; sourceTree = "<group>"; };
 		763CD69F28D2AE5A00A011CB /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
 		763CD6A228D2AEB900A011CB /* ToDoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoTests.swift; sourceTree = "<group>"; };
-		763CD6A628D2B1EF00A011CB /* ToDoRepositoryError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRepositoryError.swift; sourceTree = "<group>"; };
 		763CD6A828D2B28900A011CB /* ToDoRepositoryErrorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoRepositoryErrorTests.swift; sourceTree = "<group>"; };
 		76CA855A28D3151F0007FC03 /* ToDoListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListItemView.swift; sourceTree = "<group>"; };
 		774C972528D2A78D00C530CC /* SwiftUIToDoExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUIToDoExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -136,8 +137,12 @@
 		774C976328D2A86400C530CC /* Repository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Repository.h; sourceTree = "<group>"; };
 		774C976428D2A86400C530CC /* Repository.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Repository.docc; sourceTree = "<group>"; };
 		774C976A28D2A86400C530CC /* RepositoryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RepositoryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		774C977128D2A86400C530CC /* RepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTests.swift; sourceTree = "<group>"; };
 		774C978228D3F5C700C530CC /* ToDoEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoEditView.swift; sourceTree = "<group>"; };
+		774C978728D480E700C530CC /* ToDoUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoUserDefaults.swift; sourceTree = "<group>"; };
+		774C978928D4818D00C530CC /* AppUserDefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaultsKeys.swift; sourceTree = "<group>"; };
+		774C978D28D54BC000C530CC /* ToDoInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoInputView.swift; sourceTree = "<group>"; };
+		774C979328D563AB00C530CC /* AppUserDefaultsKeysTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserDefaultsKeysTests.swift; sourceTree = "<group>"; };
+		77BEFC8D28D84ADF0006909B /* ToDoListViewUIests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewUIests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +188,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774C97D928D833FC00C530CC /* EasyUserDefaults in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,13 +220,13 @@
 			path = Create;
 			sourceTree = "<group>";
 		};
-		763CD67A28D2ADA500A011CB /* resource */ = {
+		763CD67A28D2ADA500A011CB /* Resource */ = {
 			isa = PBXGroup;
 			children = (
 				774C972C28D2A78F00C530CC /* Assets.xcassets */,
 				774C972E28D2A78F00C530CC /* Preview Content */,
 			);
-			path = resource;
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		763CD67B28D2ADE600A011CB /* App */ = {
@@ -245,7 +251,6 @@
 			isa = PBXGroup;
 			children = (
 				763CD6A128D2AE9B00A011CB /* ToDo */,
-				763CD69128D2AE4600A011CB /* EntityTests.swift */,
 			);
 			path = EntityTests;
 			sourceTree = "<group>";
@@ -298,7 +303,7 @@
 			isa = PBXGroup;
 			children = (
 				763CD67B28D2ADE600A011CB /* App */,
-				763CD67A28D2ADA500A011CB /* resource */,
+				763CD67A28D2ADA500A011CB /* Resource */,
 				774C975B28D2A83E00C530CC /* UI */,
 			);
 			path = SwiftUIToDoExample;
@@ -323,6 +328,8 @@
 		774C974228D2A78F00C530CC /* SwiftUIToDoExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
+				77BEFC8828D84AAA0006909B /* UI */,
+				77BEFC8728D84A9B0006909B /* App */,
 				774C974328D2A78F00C530CC /* SwiftUIToDoExampleUITests.swift */,
 				774C974528D2A78F00C530CC /* SwiftUIToDoExampleUITestsLaunchTests.swift */,
 			);
@@ -332,6 +339,7 @@
 		774C975B28D2A83E00C530CC /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				774C978C28D54BA200C530CC /* Component */,
 				774C978128D3F5B700C530CC /* Edit */,
 				763CD67928D2AD8200A011CB /* Create */,
 				763CD67828D2AD5800A011CB /* List */,
@@ -342,6 +350,7 @@
 		774C976228D2A86400C530CC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				774C978428D4807900C530CC /* UserDefaults */,
 				774C977F28D2A86B00C530CC /* ToDo */,
 				774C976328D2A86400C530CC /* Repository.h */,
 				774C976428D2A86400C530CC /* Repository.docc */,
@@ -352,8 +361,8 @@
 		774C977028D2A86400C530CC /* RepositoryTests */ = {
 			isa = PBXGroup;
 			children = (
+				774C978F28D5636000C530CC /* UserDefaults */,
 				774C978028D2A87100C530CC /* ToDo */,
-				774C977128D2A86400C530CC /* RepositoryTests.swift */,
 			);
 			path = RepositoryTests;
 			sourceTree = "<group>";
@@ -362,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				763CD67428D2AC3800A011CB /* ToDoRepository.swift */,
-				763CD6A628D2B1EF00A011CB /* ToDoRepositoryError.swift */,
 			);
 			path = ToDo;
 			sourceTree = "<group>";
@@ -382,6 +390,94 @@
 				774C978228D3F5C700C530CC /* ToDoEditView.swift */,
 			);
 			path = Edit;
+			sourceTree = "<group>";
+		};
+		774C978428D4807900C530CC /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				774C978B28D4869B00C530CC /* ToDo */,
+				774C978928D4818D00C530CC /* AppUserDefaultsKeys.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		774C978B28D4869B00C530CC /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+				774C978728D480E700C530CC /* ToDoUserDefaults.swift */,
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		774C978C28D54BA200C530CC /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				774C978D28D54BC000C530CC /* ToDoInputView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		774C978F28D5636000C530CC /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				774C979028D5636D00C530CC /* ToDo */,
+				774C979328D563AB00C530CC /* AppUserDefaultsKeysTests.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
+		774C979028D5636D00C530CC /* ToDo */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ToDo;
+			sourceTree = "<group>";
+		};
+		77BEFC8728D84A9B0006909B /* App */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		77BEFC8828D84AAA0006909B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				77BEFC8C28D84ABF0006909B /* List */,
+				77BEFC8B28D84ABB0006909B /* Create */,
+				77BEFC8A28D84AB50006909B /* Edit */,
+				77BEFC8928D84AB00006909B /* Component */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		77BEFC8928D84AB00006909B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		77BEFC8A28D84AB50006909B /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Edit;
+			sourceTree = "<group>";
+		};
+		77BEFC8B28D84ABB0006909B /* Create */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
+		77BEFC8C28D84ABF0006909B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				77BEFC8D28D84ADF0006909B /* ToDoListViewUIests.swift */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -458,6 +554,8 @@
 				763CD69528D2AE4600A011CB /* PBXTargetDependency */,
 			);
 			name = SwiftUIToDoExample;
+			packageProductDependencies = (
+			);
 			productName = SwiftUIToDoExample;
 			productReference = 774C972528D2A78D00C530CC /* SwiftUIToDoExample.app */;
 			productType = "com.apple.product-type.application";
@@ -510,9 +608,13 @@
 			buildRules = (
 			);
 			dependencies = (
-				763CD6A528D2B02600A011CB /* PBXTargetDependency */,
+				774C97D628D8132700C530CC /* PBXTargetDependency */,
+				774C97D428D8124200C530CC /* PBXTargetDependency */,
 			);
 			name = Repository;
+			packageProductDependencies = (
+				774C97D828D833FC00C530CC /* EasyUserDefaults */,
+			);
 			productName = Repository;
 			productReference = 774C976128D2A86400C530CC /* Repository.framework */;
 			productType = "com.apple.product-type.framework";
@@ -579,6 +681,9 @@
 				Base,
 			);
 			mainGroup = 774C971C28D2A78D00C530CC;
+			packageReferences = (
+				774C97D728D833FC00C530CC /* XCRemoteSwiftPackageReference "EasyUserDefaults" */,
+			);
 			productRefGroup = 774C972628D2A78D00C530CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -662,7 +767,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				763CD69228D2AE4600A011CB /* EntityTests.swift in Sources */,
 				763CD6A328D2AEB900A011CB /* ToDoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,6 +775,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774C978E28D54BC000C530CC /* ToDoInputView.swift in Sources */,
 				774C975528D2A81800C530CC /* ToDoCreateView.swift in Sources */,
 				774C978328D3F5C700C530CC /* ToDoEditView.swift in Sources */,
 				76CA855B28D3151F0007FC03 /* ToDoListItemView.swift in Sources */,
@@ -693,6 +798,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77BEFC8E28D84ADF0006909B /* ToDoListViewUIests.swift in Sources */,
 				774C974428D2A78F00C530CC /* SwiftUIToDoExampleUITests.swift in Sources */,
 				774C974628D2A78F00C530CC /* SwiftUIToDoExampleUITestsLaunchTests.swift in Sources */,
 				774C975928D2A82D00C530CC /* ToDoListView.swift in Sources */,
@@ -706,7 +812,8 @@
 			files = (
 				774C976528D2A86400C530CC /* Repository.docc in Sources */,
 				763CD67528D2AC3800A011CB /* ToDoRepository.swift in Sources */,
-				763CD6A728D2B1EF00A011CB /* ToDoRepositoryError.swift in Sources */,
+				774C978828D480E700C530CC /* ToDoUserDefaults.swift in Sources */,
+				774C978A28D4818D00C530CC /* AppUserDefaultsKeys.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,7 +821,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				774C977228D2A86400C530CC /* RepositoryTests.swift in Sources */,
+				774C979428D563AB00C530CC /* AppUserDefaultsKeysTests.swift in Sources */,
 				763CD67728D2AC4400A011CB /* ToDoRepositoryTests.swift in Sources */,
 				763CD6A928D2B28900A011CB /* ToDoRepositoryErrorTests.swift in Sources */,
 			);
@@ -732,11 +839,6 @@
 			isa = PBXTargetDependency;
 			target = 763CD68028D2AE4500A011CB /* Entity */;
 			targetProxy = 763CD69428D2AE4600A011CB /* PBXContainerItemProxy */;
-		};
-		763CD6A528D2B02600A011CB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 763CD68028D2AE4500A011CB /* Entity */;
-			targetProxy = 763CD6A428D2B02600A011CB /* PBXContainerItemProxy */;
 		};
 		774C973728D2A78F00C530CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -757,6 +859,15 @@
 			isa = PBXTargetDependency;
 			target = 774C976028D2A86400C530CC /* Repository */;
 			targetProxy = 774C977428D2A86400C530CC /* PBXContainerItemProxy */;
+		};
+		774C97D428D8124200C530CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 774C97D328D8124200C530CC /* EasyUserDefaults */;
+		};
+		774C97D628D8132700C530CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 763CD68028D2AE4500A011CB /* Entity */;
+			targetProxy = 774C97D528D8132700C530CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1275,6 +1386,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		774C97CB28D810FC00C530CC /* XCRemoteSwiftPackageReference "EasyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashi-psn/EasyUserDefaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+		774C97D728D833FC00C530CC /* XCRemoteSwiftPackageReference "EasyUserDefaults" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ashi-psn/EasyUserDefaults.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		774C97D328D8124200C530CC /* EasyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 774C97CB28D810FC00C530CC /* XCRemoteSwiftPackageReference "EasyUserDefaults" */;
+			productName = EasyUserDefaults;
+		};
+		774C97D828D833FC00C530CC /* EasyUserDefaults */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 774C97D728D833FC00C530CC /* XCRemoteSwiftPackageReference "EasyUserDefaults" */;
+			productName = EasyUserDefaults;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 774C971D28D2A78D00C530CC /* Project object */;
 }

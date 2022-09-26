@@ -11,15 +11,9 @@ import Entity
 class ToDoTests: XCTestCase {
     
     func testCreate() {
-        let expectUUID = UUID()
         let expectText = "expect text"
         
-        let todo = ToDo(
-            id: expectUUID,
-            text: expectText
-        )
-        
-        XCTAssertEqual(todo.id, expectUUID)
-        XCTAssertEqual(todo.text, expectText)
+        let todo = ToDo(expectText)
+        XCTAssertEqual(todo, expectText)
     }
 }

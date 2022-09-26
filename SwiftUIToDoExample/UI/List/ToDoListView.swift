@@ -16,7 +16,6 @@ struct ToDoListView: View {
     /// Todo list items
     @State private var todos: [ToDo] = []
     
-    
     /// Show ToDoCreateView flug.
     @State private var showCreateView: Bool = false
     
@@ -42,18 +41,29 @@ struct ToDoListView: View {
                 }
                 .navigationTitle("ToDo一覧")
                 .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .navigationBarTrailing) {
+                        //削除ボタン
+                        Button(action: {
+                            deleteAll()
+                        }) {
+                            Image(systemName: "trash")
+                                .foregroundColor(.blue)
+                        }.disabled(todos.isEmpty)
+                    }
+                }
                 
                 // List
-                List(todos, id: \.id) { todo in
-                    NavigationLink(
-                        destination: ToDoEditView(todo: todo)
-                            .onDisappear {
-                                getData()
-                            },isActive: $showEditView) {
-                                ToDoListItemView(todo: todo)
-                            }
-                    
-                }.background(Color.white)
+                List {
+                    ForEach(Array(todos.enumerated()), id: \.offset) { index, todo in
+                        ToDoListItemView(index: index, todo: todo, onEdited: {
+                            getData()
+                        }) {
+                            getData()
+                        }
+                    }
+                }
+                
                 // floadting action button
                 VStack {
                     Spacer()
@@ -89,7 +99,11 @@ struct ToDoListView: View {
     
     /// Get todo data
     func getData() {
-        self.todos = repository.getAll()
+        self.todos = ToDoRepository.getAll()
+    }
+    
+    func deleteAll() {
+        self.todos = ToDoRepository.deleteAll()
     }
 }
 

@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "easyuserdefaults",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ashi-psn/EasyUserDefaults.git",
+      "state" : {
+        "revision" : "323ba7c09f898d34aa43e5a04a55f95a22ec5728",
+        "version" : "0.0.6"
+      }
+    }
+  ],
+  "version" : 2
+}

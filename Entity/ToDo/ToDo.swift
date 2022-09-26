@@ -7,17 +7,5 @@
 
 import Foundation
 
-public struct ToDo {
-    public let id: UUID
-    public let text: String
-    
-    public init(text: String) {
-        let id = UUID()
-        self.init(id: id, text: text)
-    }
-    
-    public init(id: UUID, text: String) {
-        self.id = id
-        self.text = text
-    }
-}
+public typealias ToDo = String
+public typealias ToDos = [ToDo]

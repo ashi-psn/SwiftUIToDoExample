@@ -11,7 +11,7 @@ import XCTest
 class ToDoRepositoryErrorTests: XCTestCase {
     
     func testLocalizedString() {
-        let error = ToDoRepositoryError.keyisalreadyexists
-        XCTAssertEqual(error.localizedDescription, "既に存在しているキー名です")
+        let error = ToDoRepositoryError.indexNotFound
+        XCTAssertEqual(error.localizedDescription, "要素が存在しません")
     }
 }

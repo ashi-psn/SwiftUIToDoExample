@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import EasyUserDefaults
 
 @main
 struct SwiftUIToDoExampleApp: App {
